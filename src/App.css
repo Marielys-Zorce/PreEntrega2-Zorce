@@ -24,6 +24,24 @@
   color: white;
 }
 
+p{
+  margin-left: 190px;
+  font-size:20px;
+  color: rgb(26, 25, 25);
+  margin-bottom: 1px !important;
+
+
+}
+.card-body .parrafo{
+  margin-left: 0px;
+  background-color: aliceblue;
+  color: rgb(234, 53, 53);
+}
+.carrito{
+  text-align: end;
+  margin-right: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }

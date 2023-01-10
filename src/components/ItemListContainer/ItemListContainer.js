@@ -1,21 +1,29 @@
-import foto from "../ItemListContainer/IMG3.jpg"
-import Card from 'react-bootstrap/Card';
-export const ItemListContainer = (torta) => {
+import { useEffect, useState } from "react";
+import { pedirDatos } from "../../helpers/pedirDatos";
+import ItemList from "../ItemList/ItemList";
+
+
+export const ItemListContainer = () => {
+
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        pedirDatos()
+            .then((res) => {
+                setProductos(res)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }, [])
+
+
     return (
-       
-        <Card className="card bg-dark text-white mt-2 m-5" style={{ width: '15rem' }}>
-            <Card.Img variant="top" src={foto} />
-            <Card.Body>
-                <Card.Title>
-                    <h5>Descripcion: {torta.Descripcion}</h5>
-                    <p className="parrafo">Precio: {torta.Precio}</p>
-                  
-
-                </Card.Title>
-
-
-            </Card.Body>
-        </Card>
+        <div>
+            <ItemList productos={productos}/>
+    
+        </div>
 
     )
 }
+

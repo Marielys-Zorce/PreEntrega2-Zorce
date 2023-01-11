@@ -4,7 +4,7 @@ const ItemList = ({ productos }) => {
 
     return (
         <div className="container my-5">
-            <h1>Nuestros Productos </h1>
+            <h1 className='titulo' >Nuestros Productos </h1>
             <hr />
 
             <section className="row my-4">

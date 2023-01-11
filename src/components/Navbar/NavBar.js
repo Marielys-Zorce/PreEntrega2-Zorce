@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { CartWidget } from '../CartWidget/CartWidget';
 import logo from '../Navbar/logo.JPG';
+import { Link } from 'react-router-dom'
 
 
 
@@ -15,7 +16,7 @@ function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"><img src={logo} width="80px"></img></Navbar.Brand>
+        <Navbar.Brand href="#"><img src={logo} width="80px" alt='logo'></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -23,11 +24,11 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Inicio</Nav.Link>
-            <Nav.Link href="#action2">Nosotros</Nav.Link>
-            <Nav.Link href="#action2">Productos</Nav.Link>
-            <Nav.Link href="#action2">Tiendas</Nav.Link>
-            <Nav.Link href="#action2">Contactenos</Nav.Link>
+            <Link to="/" className='nav-link'>Inicio</Link>
+            <Link to="/productos/heladas" className='nav-link'>Heladas</Link>
+            <Link to="/productos/bizcocho" className='nav-link'>Bizcocho</Link>
+            <Link to="/productos/panqueque" className='nav-link'>Panqueque</Link>
+            <Link to="/productos/dehoja" className='nav-link'>De Hoja</Link>
             
          
           </Nav>

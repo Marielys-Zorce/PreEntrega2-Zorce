@@ -1,24 +1,26 @@
 import { useState } from "react"
-import { InputGroup } from "react-bootstrap"
-import FormCheckInput from "react-bootstrap/esm/FormCheckInput"
-export const ItemCount = () => {
-    let [counter, setCounter] = useState(0)
+
+
+export const ItemCount = ({max}) => {
+    const [cantidad, setCantidad] = useState(1)
 
     const sumar = () => {
-        setCounter(counter + 1)
+        cantidad < max && setCantidad(cantidad + 1)
     }
     const restar = () => {
-        setCounter(counter - 1)
+        cantidad > 1 && setCantidad(cantidad - 1)
     }
 
     return (
 
       <div className="container">
 
-        <button className="btn btn-outline-primary" onClick={sumar}>Sumar</button>
-        <p>{counter}</p>
-        <button className="btn btn-outline-primary" onClick={restar}>Restar</button>
-        <input></input>
+        <button className="btn btn-outline-primary" onClick={restar}>-</button>
+        <span className="mx-3">{cantidad}</span>
+        <button className="btn btn-outline-primary" onClick={sumar}>+</button>
+        <br/>
+        <button className="btn btn-success my-3">Agregar al carrito</button>
+        
 
       </div>
       

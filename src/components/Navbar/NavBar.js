@@ -24,11 +24,11 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link to="/" className='nav-link'>Inicio</Link>
-            <Link to="/productos/heladas" className='nav-link'>Heladas</Link>
-            <Link to="/productos/bizcocho" className='nav-link'>Bizcocho</Link>
-            <Link to="/productos/panqueque" className='nav-link'>Panqueque</Link>
-            <Link to="/productos/dehoja" className='nav-link'>De Hoja</Link>
+            <Link to="/" className='nav-link letraGrande'>Inicio</Link>
+            <Link to="/productos/Heladas" className='nav-link letraGrande'>Heladas</Link>
+            <Link to="/productos/Bizcocho" className='nav-link letraGrande'>Bizcocho</Link>
+            <Link to="/productos/Panqueque" className='nav-link letraGrande'>Panqueque</Link>
+            <Link to="/productos/MilHoja" className='nav-link letraGrande'>De Hoja</Link>
             
          
           </Nav>

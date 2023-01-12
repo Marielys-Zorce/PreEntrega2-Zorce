@@ -18,7 +18,7 @@ const Item = ( {nombre,img,desc,precio,categoria,id} ) => {
                         <br/>
                         <small className="parrafo">Categoría: {categoria}</small>
                         <br/>
-                        <Link to={`/detail/${id}`} className="btn btn-primary">Ver más</Link>
+                        <Link className=" btn-primary btn boton" to={`/detail/${id}`}>Ver más</Link>
                     </Card.Title>
                 </Card.Body>
             </Card>

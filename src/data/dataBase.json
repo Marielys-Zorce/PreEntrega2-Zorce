@@ -6,7 +6,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666511/pasteler%C3%ADa/cheescake-frutos-rojos_o64fdg.jpg",
         "precio": 20000,
         "stock":5,
-        "categoria":"heladas"
+        "categoria":"Heladas"
     },
     {
         "id": "002",
@@ -15,7 +15,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664667137/pasteler%C3%ADa/IMG1_x1v89i.jpg",
         "precio": 15000,
         "stock":6,
-        "categoria":"heladas"
+        "categoria":"Heladas"
     },
     {
         "id": "003",
@@ -24,7 +24,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664667420/pasteler%C3%ADa/IMG3_kygdfl.jpg",
         "precio": 18000,
         "stock":10,
-        "categoria":"bizcocho"
+        "categoria":"Bizcocho"
     },
     {
         "id": "004",
@@ -33,7 +33,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666579/pasteler%C3%ADa/IMG4_plizhl.jpg",
         "precio": 22000,
         "stock":15,
-        "categoria":"panqueque"
+        "categoria":"Panqueque"
     },
     {
         "id": "005",
@@ -42,7 +42,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666596/pasteler%C3%ADa/IMG6_vmh0pw.jpg",
         "precio": 18000,
         "stock":8,
-        "categoria":"heladas"
+        "categoria":"Heladas"
     },
     {
         "id": "006",
@@ -51,7 +51,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664667016/pasteler%C3%ADa/selva-negra_jxrj1d.webp",
         "precio": 25000,
         "stock":15,
-        "categoria":"panqueque"
+        "categoria":"Panqueque"
     },
     {
         "id": "007",
@@ -60,7 +60,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666693/pasteler%C3%ADa/torta-manjar_mtlrrh.jpg",
         "precio": 20000,
         "stock":15,
-        "categoria":"dehoja"
+        "categoria":"MilHoja"
     },
     {
         "id": "008",
@@ -69,7 +69,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664667327/pasteler%C3%ADa/tortaredvelve_zrztpz.webp",
         "precio": 28000,
         "stock":15,
-        "categoria":"panqueque"
+        "categoria":"Panqueque"
     },
     {
         "id": "009",
@@ -78,7 +78,7 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666701/pasteler%C3%ADa/tortachocolate1_ejxonh.webp",
         "precio": 23000,
         "stock":15,
-        "categoria":"dehoja"
+        "categoria":"MilHoja"
 
     },
     {
@@ -88,6 +88,6 @@
         "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666695/pasteler%C3%ADa/tortaglaseada-chocolate_rclbox.jpg",
         "precio": 30000,
         "stock":10,
-        "categoria":"bizcocho"
+        "categoria":"Bizcocho"
     }
 ]

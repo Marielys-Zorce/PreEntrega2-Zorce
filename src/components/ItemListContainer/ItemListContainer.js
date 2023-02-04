@@ -1,34 +1,71 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "../../helpers/pedirDatos";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, where, query } from "firebase/firestore";
+import { db } from "../../firebase/config"
 
 
 export const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
-    const {categoriaId} = useParams()
+    const [loading, setLoading] = useState (true)
+    const { categoriaId } = useParams()
+
+    console.log(productos)
 
     useEffect(() => {
-        pedirDatos()
-            .then((res) => {
-                if (categoriaId) {
-                    setProductos(res.filter(prod => prod.categoria === categoriaId))
-                }else {
-                    setProductos(res)
-                }
-              
+        setLoading(true)
+
+        //1.- Referencia
+        const productsRef = collection(db, "productos")
+        const q = categoriaId
+                     ? query(productsRef, where("categoria", "==", categoriaId))
+                     : productsRef
+        //2.- Petición asincrónica
+        getDocs(q)
+            .then((resp) => {
+
+                setProductos(resp.docs.map((doc) => {
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                    
+            }))
+        })
+            
+            .finally(() => {
+                setLoading(false)
             })
-            .catch((err) => {
-                console.log(err)
-            })
+
+        // pedirDatos()
+        //     .then((res) => {
+        //         if (categoriaId) {
+        //             setProductos(res.filter(prod => prod.categoria === categoriaId))
+        //         } else {
+        //             setProductos(res)
+        //         }
+
+        //     })
+        //     .catch((err) => {
+        //         console.log(err)
+        //     })
+        //     .finally(() => {
+        //         setLoading(false)
+        //     })
     }, [categoriaId])
 
 
     return (
         <div>
-            <ItemList productos={productos}/>
-    
+            {
+                loading
+                    ? <h2>Cargando...</h2>
+                    :<ItemList productos={productos} />
+
+            }
+
+
         </div>
 
     )

@@ -1,13 +1,28 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { useState } from "react"
 import { ItemCount } from "../ItemCount/ItemCount"
+import { useCartContext } from "../../context/CartContext"
+
 
 
 const ItemDetail = ({ img, nombre, desc, precio, categoria, stock, id }) => {
+
+    const { agregarAlCarrito, isInCart } = useCartContext()
+    
+    const [cantidad, setCantidad] = useState(1)
 
     const navigate = useNavigate()
 
     const handleVolver = () => {
         navigate(-1)
+    }
+
+    const handleAgregar = () => {
+        const item = {
+            id, nombre, desc, img, precio, stock, categoria, cantidad
+        }
+
+        agregarAlCarrito(item)
     }
 
     return (
@@ -25,14 +40,28 @@ const ItemDetail = ({ img, nombre, desc, precio, categoria, stock, id }) => {
                         <h5 className="subTitulo">{nombre}</h5>
                         <p className="estiloTexto">Descripción: {desc}</p>
                         <p className="estiloTexto">Categoría: {categoria}</p>
-                        <ItemCount max={stock} />
+                        
+                        {stock <= 10 && <h5>Últimas unidades disponibles!!!</h5>}
+
+                        {
+                            !isInCart(id)
+                                ? <ItemCount
+                                    max={stock}
+                                    cantidad={cantidad}
+                                    setCantidad={setCantidad}
+                                    onAdd={handleAgregar} />
+
+                                : <Link to="/cart" className="btn btn-success my-4">Finalizar compra</Link>    
+                        }
+
+
 
 
 
                     </div>
-                    <hr />
+                    
                 </div>
-                <button className="boton btn btn-primary" onClick={handleVolver}>Volver </button>
+                <button className="boton btn btn-primary my-5" onClick={handleVolver}>Volver </button>
             </div>
         </div>
 

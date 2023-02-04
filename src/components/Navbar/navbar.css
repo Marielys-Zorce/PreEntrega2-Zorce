@@ -1,0 +1,58 @@
+/* Estilos Header*/
+
+.header{
+  
+    
+    
+    /* gradientes */
+    background-image: linear-gradient(white 85%, rgb(242, 196, 216)) !important;
+}  
+
+
+.colorNav{
+    background-color:white !important;
+    }
+
+.logo{
+    width: 90px !important;
+    height: 70px !important;
+}
+            
+.letraGrande{
+    margin-left: 1.5rem !important;
+    font-size: 20px !important;
+}
+
+.colorButton{
+    background-color:  rgb(226, 212, 218) !important;
+    border-color:rgb(226, 212, 218) !important;
+    color: dimgray !important;
+                         /* /* &:hover{
+                             background-color: rgb(237, 174, 201);
+                     }  */
+}     
+
+.logout{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.parrafo{
+    color: darkgray;
+}
+
+.cart-widget{
+    color:darkgray;
+    font-size: 25px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out all;
+    justify-content:space-around;
+  }
+  
+  .cart-widget-active{
+    visibility: visible;
+    opacity: 1;
+  }

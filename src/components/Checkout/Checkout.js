@@ -5,6 +5,7 @@ import { useCartContext } from "../../context/CartContext"
 import { db } from "../../firebase/config"
 import { collection } from "firebase/firestore"
 import { Link } from "react-router-dom"
+import '../Checkout/checkout.css'
 
 
 const Checkout = () => {
@@ -68,7 +69,7 @@ const Checkout = () => {
         return (
             <div className="conatiner">
                 <h2 className="titulo">Tu compra ha sido exitosa!!!</h2>
-                <div className="container subTitulo my-5">Tu código de orden es:<b className="alert alert-success boton" role="alert">{orderId}</b></div>
+                <div className="container subTitulo my-8">Tu código de orden es:<b className="alert alert-success " role="alert">{orderId}</b></div>
 
                 <Link to="/" className="boton btn btn-primary">Volver</Link>
             </div>
@@ -81,11 +82,11 @@ const Checkout = () => {
     }
 
     return(
-        <div className="container my-5">
-            <h2>Finalizar Compra</h2>
-            <hr/>
+        <div >
+            <h2 className="titulo">Finalizar Compra</h2>
+            
 
-            <form onSubmit={handleSubmit}>
+            <form className=" container my-5 formulario" onSubmit={handleSubmit}>
     
                 <input onChange={handleInputChange} value={values.nombre} name='nombre' type="text" className="form-control my-2" placeholder="Nombre"/>
                 <input onChange={handleInputChange} value={values.direccion} name='direccion' type="text" className="form-control my-2" placeholder="Dirección"/> 

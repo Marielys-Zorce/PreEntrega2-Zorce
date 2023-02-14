@@ -89,5 +89,60 @@
         "precio": 30000,
         "stock":10,
         "categoria":"Bizcocho"
+    },
+    {
+        "id": "011",
+        "nombre": "Cheescake Tradicional",
+        "desc": "Prueba este exquisito cheescake con cubierta de glaseado de frambuesa, es la mejor opción al momento de compartir en familia.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664667169/pasteler%C3%ADa/cheescak-individual_fscldz.jpg",
+        "precio": 20000,
+        "stock":12,
+        "categoria":"Heladas"
+    },
+    {
+        "id": "012",
+        "nombre": "Tarta Pastel de Arandanos",
+        "desc": "Esta rica e inigualable tarta de arandanos, rellena de chocolate es la excusa perfecta para cuando de antojos de trata.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666949/pasteler%C3%ADa/tarta-pastel-arandanos_pbrfoq.jpg",
+        "precio": 25000,
+        "stock":8,
+        "categoria":"Bizcocho"
+    },
+    {
+        "id": "013",
+        "nombre": "Torta Magnific",
+        "desc": "Esta deliciosa torta de suave bizcocho, rellena con chocolate semi-amargo y chispas de chocolate, doble sabor exquisita y elegante, cubierta de glaseado real es la mejor opción para complacer paladares.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1664666499/pasteler%C3%ADa/BANNER_ncymuq.jpg",
+        "precio": 30000,
+        "stock":11,
+        "categoria":"Bizcocho"
+    },
+    {
+        "id": "014",
+        "nombre": "Panqueque Orange",
+        "desc": "Este rico y sencillo panqueque de naranja, es la mejor opción al momento de compartir y disfrutar un momento en familia.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1676335616/pasteler%C3%ADa/panqueque_naranja_hfv6rz.jpg",
+        "precio": 18000,
+        "stock":10,
+        "categoria":"Panqueque"
+    },
+    {
+        "id": "015",
+        "nombre": "Torta July",
+        "desc": "Cuando de sorprender se trata, esta exquisita torta con cubierta de glaseado de frutas tropicales, no dudarás en probarla.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1676336242/pasteler%C3%ADa/torta_de_frutas_obgjap.webp",
+        "precio": 22000,
+        "stock":12,
+        "categoria":"MilHoja"
+    },
+    {
+        "id": "016",
+        "nombre": "Torta Jane",
+        "desc": "Cuando de destacar se trata, esta exquisita torta con cubierta de glaseado y rellena de choconutella, es la opción correcta para sorprender.",
+        "img": "https://res.cloudinary.com/dninjpxlv/image/upload/v1676336201/pasteler%C3%ADa/Degustando-Milhojas_qikubk.png",
+        "precio": 30000,
+        "stock":15,
+        "categoria":"MilHoja"
     }
+
 ]

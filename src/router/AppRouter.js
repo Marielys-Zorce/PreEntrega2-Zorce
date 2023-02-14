@@ -16,9 +16,7 @@ const AppRouter = () => {
             {user.logged
                 ? <PrivateRoutes />
                 : <PublicRoutes />
-            }
-
-            {/* <Footer /> */}
+            } 
 
         </BrowserRouter>
     )

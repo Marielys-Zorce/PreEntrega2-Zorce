@@ -1,26 +1,26 @@
-// import { Link } from 'react-router-dom';
-// import { mediospago } from '../Footer/mediospago.jpg'
 
-// function Footer() {
+import  mediospago  from '../Footer/mediospago.jpg'
+import '../Footer/Footer.css'
 
-//     return (
-//         <>
-//             <footer className="footer">
-//                 <div className="textoChico posicion">
-//                     <img className="imgPago" src={mediospago} alt={mediospago} aria-hidden=" true"/>
-//                     <p>&copy 2022 Pastelería Dulce Marie; Términos Política de Privacidad</p>
-//                 </div>
-//                 <div className="imgRedes">
-//                     <Link to="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram"/></Link>
-//                     <Link to="https://www.Facebook.com/"><img src="./img/Facebook.png" alt="facebook"/></Link>
-//                     <Link to="https://www.twitter.com/"><img src="./img/twitter.png" alt="twitter"/></Link>
-//                 </div>
+function Footer() {
 
-//             </footer>
+    return (
+        <>
+            <footer className="footer">
+                <div className="textoChico ">
+                    <img className="imgPago" src={mediospago} alt={mediospago} aria-hidden=" true" /> 
+                    <p className='textoChico'>&copy 2022 Pastelería Dulce Marie; Términos Política de Privacidad</p>
+                </div>
+                <div className="imgRedes">
+                    <a href="https://www.instagram.com/"><img className='imgRedes' src="./img/instagram.png" alt="instagram" /></a>
+                    <a href="https://www.Facebook.com/"><img className='imgRedes' src="./img/Facebook.png" alt="facebook" /></a>
+                    <a href="https://www.twitter.com/"><img className='imgRedes' src="./img/twitter.png" alt="twitter" /></a>
+                </div>
 
-//         </>
-//     )
+            </footer>
 
-// }
+        </>
+    )
+}
 
-// // export default Footer
+export default Footer

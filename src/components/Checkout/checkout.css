@@ -26,6 +26,55 @@
 }
 
 
+        /* Estilo Formulario */
+        .formulario {
+            padding: 40px;
+            margin-left: 350px;
+            width: 600px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: rgb(150, 142, 142);
+            text-align: left;
+            font-style: normal;
+            font-weight: lighter;
+            line-height: 2;
+            justify-content: center;
+            box-shadow: 0px 0px 10px 0px rgb(150, 142, 142);
+        }
+            .label {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .input {
+                border: 0.5px darkgray solid;
+                width: 300px;
+                height: 30px;
+                padding: 8px;
+            }
+
+            .textarea {
+                border-color: darkgray;
+                width: 300px;
+                height: 150px;
+                padding: 8px;
+            }
+
+            .boton {
+                background-color:  rgb(226, 212, 218);
+                color: dimgray;
+                border: 0.5px darkgray solid;
+                border-radius: 5px;
+                width: 105px;
+                height: 40px;
+                padding: 3px;
+                margin-bottom: 30px;
+                margin-left: 15px;
+                margin-top: 15px;  
+            }
+        
+
+
 .tituloGrande {
     margin-top: 10px;
     margin-bottom: 0.5rem;

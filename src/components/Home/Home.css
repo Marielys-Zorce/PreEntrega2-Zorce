@@ -1,0 +1,129 @@
+.subTitulo {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 5px;
+    color: darkgray;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal
+}
+
+.tituloBanner {
+   margin-bottom: 130px;
+    padding: 5px;
+    color:white;
+    text-align:center;
+    font-style: italic;
+    font-weight:bold;
+    font-size: 40px;
+}
+
+.imgCaorusel{
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.textoJustificado {
+    margin: 5px;
+    text-align: justify;
+    color: darkgray;
+    font-style: oblique;
+    bottom: 5px;
+    top: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+  
+  /* Estilo Primera Sección */
+
+.estiloFuente {
+    /* background-color: white; */
+    background-color: rgb(247, 229, 241);
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: darkgray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.estiloParrafo{
+    
+    margin: 10px;
+    padding-top: 10px;
+   
+    text-align: center;
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+
+.segundaSeccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    background-color: white;
+    line-height: 2;
+    text-align: center;
+    color: darkgray;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+    .enLinea {
+        margin: 20px 0px;
+        width: 200px;
+        height: 150px;
+        margin: 20px 0px;
+        padding: 10px;
+    }
+
+    .terceraSeccion {
+        background-color: rgb(247, 229, 241);
+        line-height: 2;
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        color: darkgray;
+        padding: 10px;
+        
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+        .input {
+            border: 0.5px darkgray solid;
+            width: 270px;
+            height: 45px;
+            padding: 8px;
+        }
+
+        .boton {
+            background-color:  rgb(226, 212, 218);
+            color: dimgray;
+            border: 0.5px darkgray solid;
+            border-radius: 5px;
+            width: 105px;
+            height: 40px;
+            padding: 3px;
+            margin-bottom: 7px;
+            margin-left: 15px;
+            margin-top: 5px;
+            
+            /* &:hover{
+                background-color: rgb(237, 174, 201);
+            } */
+        }
+        
+
+    

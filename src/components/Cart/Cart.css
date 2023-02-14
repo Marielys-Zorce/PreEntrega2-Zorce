@@ -1,0 +1,6 @@
+.imgTable{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-left: 10px;
+}

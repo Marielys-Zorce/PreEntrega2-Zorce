@@ -22,7 +22,7 @@
 }
 
 .tituloGrande {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 0.5rem;
   padding: 10px;
   font-weight: 500;
@@ -55,10 +55,15 @@
 } */
 
 .img {
-      width: 280px;
+      width: 240px;
       height: 260px;
       border-radius: 8px;
       box-shadow: 0px 10px 10px rgb(182, 176, 176);
+      object-fit: cover;
+      display: flex;
+      flex-direction: row;
+     
+      justify-content: space-around;
 
       /* tranformaciones animaciones */
       /* &:hover {
@@ -181,6 +186,48 @@
   visibility: visible;
   opacity: 1;
 }
+
+/*Estilos Footer*/
+
+.footer {
+  grid-area: footer;
+  border-top: 2px rgb(226, 212, 218) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  /* gradientes */
+  background-image: linear-gradient(to top, rgb(237, 174, 201), rgb(226, 212, 218));
+}
+.imgPago {
+      width: 160px;
+      height: 50px;
+  }
+
+  .textoChico {
+      font-size: 10px;
+      color: black;
+      position: relative;
+      top: 10px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+
+  .imgRedes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 30px;
+      width: 30px;
+      margin: 10px;
+  }
+
+
+
+
+
+
   .App-logo {
   height: 40vmin;
   pointer-events: none;

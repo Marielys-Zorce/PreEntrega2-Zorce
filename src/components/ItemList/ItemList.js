@@ -7,7 +7,7 @@ const ItemList = ({ productos }) => {
             <h1 className='titulo' >Nuestros Productos </h1>
             
 
-            <section className="row my-4">
+            <section className=" row container mx-4">
                
                 { productos.map((prod) => <Item key={prod.id} {...prod}/>)}
 
